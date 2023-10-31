@@ -56,14 +56,23 @@ body {
   padding: 2rem 10% 0;
   font-family: "Sacramento";
   font-size: 2rem;
-  color: #ffc1dc;
+  color: var(--pink);
   line-height: 2rem;
   margin-top: 1.5rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.hero h3 {
+  font-size: 1.7rem;
+  font-family: "Sacramento";
+  color: #ffc1dc;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -0.5rem;
+}
+
 .hero h5 {
   text-shadow: var(--shadow);
+  margin-top: 1rem;
 }
 
 .hero a {
@@ -72,6 +81,7 @@ body {
   padding: 0.1rem 1rem;
   border-radius: 10px;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero a:hover {
