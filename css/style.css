@@ -1,12 +1,12 @@
 :root {
   --pink: #f14e95;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 body {
   font-size: 1.2rem;
-  font-family: "Edu+TAS+Beginner", sans-serif;
+  font-family: "Edu TAS Beginner", cursive;
   min-height: 2000px;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #ffc1dc;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -55,7 +55,7 @@ body {
 .hero p {
   padding: 2rem 10% 0;
   font-family: "Sacramento";
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--pink);
   line-height: 2rem;
   margin-top: 1.5rem;
@@ -72,7 +72,8 @@ body {
 
 .hero h5 {
   text-shadow: var(--shadow);
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  font-size: 2rem;
 }
 
 .hero a {
@@ -88,6 +89,53 @@ body {
   color: var(--pink);
   background-color: white;
   box-shadow: var(--shadow);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(1px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title a {
+  font-family: "Tangerine";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.mynavbar .nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(../img/bg8.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -5rem;
+  padding: 5rem 5% 1rem;
+}
+
+.home h2 {
+  color: var(--pink);
+  font-family: "Tangerine";
+  font-size: 4rem;
+  text-shadow: var(--shadow);
+  font-weight: 700;
+}
+
+.home h3,
+.home p {
+  font-size: 1.5rem;
+  color: #6e0231;
+  text-shadow: var(--shadow);
 }
 
 /* responsive */
@@ -109,6 +157,17 @@ body {
   .simply-countdown > .simply-section {
     padding: 6px;
     margin: 5px;
+  }
+
+  .mynavbar .offcanvas-title {
+    margin: auto;
+  }
+
+  .mynavbar .nav-link {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 /* mobile */
